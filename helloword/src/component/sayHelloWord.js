@@ -1,6 +1,6 @@
 import React from "react"
 
-class sayHelloWordComponent extends React.Component{
+class SayHelloWordComponent extends React.Component{
 
     constructor (props) {
         super(props)
@@ -12,11 +12,10 @@ class sayHelloWordComponent extends React.Component{
         return (
             <h1>{this.props.Value}</h1>
         );
-    }
-    
+    }    
 } 
 
-class textComponent extends React.Component {
+class TextComponent extends React.Component {
 
     constructor (props) {
         super(props)
@@ -27,11 +26,11 @@ class textComponent extends React.Component {
     render(){
         return (
             <div>
-                <input type="text" name={this.props.name} />
+                <input type="text" name={this.props.name} value={this.props.value}/>
             </div>
         );
     }
 }
 
-export default sayHelloWordComponent
-export {textComponent}
+export { TextComponent };
+export default SayHelloWordComponent;

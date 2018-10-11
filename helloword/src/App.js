@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import SayHelloWordComponent from './component/sayHelloWord.js';
+import SayHelloWordComponent, {TextComponent} from './component/sayHelloWord.js';
 
 class App extends Component {
   render() {
@@ -13,6 +13,10 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
             <SayHelloWordComponent Value="Hello Word!"/>
+           
+            Testando o imput text:
+
+             <TextComponent name="txtName" value="Default Value"/>
           </p>
           <a
             className="App-link"
