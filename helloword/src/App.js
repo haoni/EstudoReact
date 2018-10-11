@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import SayHelloWordComponent, {TextComponent} from './component/sayHelloWord.js';
+import Family from './component/family';
 
 class App extends Component {
   render() {
@@ -17,6 +18,11 @@ class App extends Component {
             Testando o imput text:
 
              <TextComponent name="txtName" value="Default Value"/>
+
+
+             Testando componentes dentro de componentes:
+
+             <Family />
           </p>
           <a
             className="App-link"
