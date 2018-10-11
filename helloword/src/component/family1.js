@@ -11,7 +11,7 @@ class Family1 extends React.Component{
         return (
             <div>
               <h1>{this.props.lastName}</h1>
-              {React.cloneElement(this.props.children, {...this.props})}
+              { React.Children.map(this.props.children, child => React.cloneElement(child, {... this.props}))}
             </div>
         );
 

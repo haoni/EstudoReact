@@ -25,10 +25,14 @@ class App extends Component {
             Testando componentes dentro de componentes:
             <Family>
               <Person name="Haoni" lastName="Hashimoto"/>
+              <Person name="Andrey" lastName="Hashimoto"/>
+              <Person name="Haisa" lastName="Hashimoto"/>
             </Family>
 
-            <Family1 name="Haoni" lastName="Hashimoto">
-              <Person/>
+            <Family1 lastName="Hashimoto">
+              <Person name="Haoni" />
+              <Person name="Andrey" />
+              <Person name="Haisa" />
             </Family1>
             
           </p>
