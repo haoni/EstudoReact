@@ -6,6 +6,8 @@ import SayHelloWordComponent, {TextComponent} from './component/sayHelloWord.js'
 import Family from './component/family';
 import Person from './component/person';
 
+import Family1 from './component/family1';
+
 class App extends Component {
   render() {
     return (
@@ -24,6 +26,11 @@ class App extends Component {
             <Family>
               <Person name="Haoni" lastName="Hashimoto"/>
             </Family>
+
+            <Family1 name="Haoni" lastName="Hashimoto">
+              <Person/>
+            </Family1>
+            
           </p>
           <a
             className="App-link"
