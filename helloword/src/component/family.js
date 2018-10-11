@@ -1,15 +1,17 @@
 import React from 'react';
-import Person from './person';
 
 class Family extends React.Component {
+    
+    constructor(props){
+        super(props);
 
+        this.props = props;
+    }
 
     render(){
         return (
             <div>
-                <Person name="Haoni" lastName="Hashimoto"/>
-                <Person name="Andrey" lastName="Hashimoto"/> 
-                <Person name="Haisa" lastName="Hashimoto"/> 
+                {this.props.children}
             </div>
         );
     }

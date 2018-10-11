@@ -4,6 +4,7 @@ import './App.css';
 
 import SayHelloWordComponent, {TextComponent} from './component/sayHelloWord.js';
 import Family from './component/family';
+import Person from './component/person';
 
 class App extends Component {
   render() {
@@ -17,12 +18,12 @@ class App extends Component {
            
             Testando o imput text:
 
-             <TextComponent name="txtName" value="Default Value"/>
+            <TextComponent name="txtName" value="Default Value"/>
 
-
-             Testando componentes dentro de componentes:
-
-             <Family />
+            Testando componentes dentro de componentes:
+            <Family>
+              <Person name="Haoni" lastName="Hashimoto"/>
+            </Family>
           </p>
           <a
             className="App-link"
