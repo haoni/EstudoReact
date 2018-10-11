@@ -16,4 +16,22 @@ class sayHelloWordComponent extends React.Component{
     
 } 
 
+class textComponent extends React.Component {
+
+    constructor (props) {
+        super(props)
+
+        this.props = props;
+    }
+
+    render(){
+        return (
+            <div>
+                <input type="text" name={this.props.name} />
+            </div>
+        );
+    }
+}
+
 export default sayHelloWordComponent
+export {textComponent}
